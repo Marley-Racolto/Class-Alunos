@@ -1,0 +1,62 @@
+class Program
+{
+ class Aluno
+ {
+     private double nota1, nota2, tp;
+     string matricula, materia, nome;
+     double media, final;
+
+   public Aluno()
+ {
+
+    matricula = "222705";
+    nome = "Marley";
+
+   Console.WriteLine("Digite a nota da primeira prova: ");
+   nota1 = double.Parse(Console.ReadLine());
+
+   Console.WriteLine("Digite a nota da segunda prova: ");
+   nota2 = double.Parse(Console.ReadLine());
+
+   Console.WriteLine("Digite a nota do trabalho: ");
+   tp = double.Parse(Console.ReadLine());
+
+}
+ public double getMedia()
+ {
+  
+   media = ((nota1 + nota2) * 2.5 + tp * 2) / 7.5;
+   return media;
+
+ }
+
+ public double Getfinal()
+ {
+     
+    if (media >= 7)
+
+ 
+{
+   Console.WriteLine("APROVADO!!!");
+
+}
+
+else;
+ 
+{
+   Console.WriteLine("Não precisa ir para prova final.");
+
+ }
+ return final;
+     }
+ }
+   
+static void Main(string[] args)
+ {
+ 
+Aluno aluno = new Aluno();
+ Console.WriteLine("A média do Aluno é: {0}", aluno.getMedia());
+ Console.WriteLine(aluno.Getfinal());
+
+  }
+}
